@@ -1,0 +1,335 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+
+  <h3 style="color:white;">Welcome</h3>
+  <hr class="hrline"> <br>
+
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              Notes
+            </h3>
+            Create Notes to refer them later. They are stored permanently until deleted
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              Homework
+            </h3>
+            Add homeworks and assign them deadlines. They will be displayed prioritised by deadlines
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'youtube' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/youtube.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              Youtube
+            </h3>
+            Search Youtube and select your desired video to play it on youtube
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              To Do
+            </h3>
+            Add your to-do lists for your day and remove them as you finish
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="{% url 'books' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/books.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title ">
+              Books
+            </h3>
+            Browse books from a list of neatly organised book menu
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="{% url 'dictionary' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/dictionary.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              Dictionary
+            </h3>
+            A vocabulary from a book is troubling you? No problem, enter the word, and the meaning will be displayed
+            almost instantaneously.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'wiki' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wiki.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              WikiPedia
+            </h3>
+            Homework and Assignments? Search wikipedia to get fast results
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+      <a href="{% url 'conversion' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/conversion.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h3 class="card-title">
+              Conversion
+            </h3>
+            Check out the conversion table, that helps you to convert measurements to more familiar ones of your choice.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+
+<footer id="dk-footer" class="dk-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 col-lg-4">
+              <div class="dk-footer-box-info">
+
+                  <a href="index.html" class="footer-logo">
+                   <img class="card-img-top" src="{% static 'images/dictionary.jpg' %}" alt="Notes image"> 
+                 </a> 
+
+                  <p class="footer-info-text" style="color:white;">
+                    Let the fire of knowledge enlighten your mind and allow you to fight with darkness.
+                  </p>
+                  <div class="footer-social-link">
+                      <h3>Follow us</h3>
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-google-plus"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.linkedin.com/in/mukul-joshi-661234193/">
+                                  <i class="fa fa-linkedin"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-instagram"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- End Social link -->
+              </div>
+              <!-- End Footer info -->
+              {% comment %} <div class="footer-awarad">
+                  <img  src="{% static 'images/dictionary.jpg' %}" alt="">
+                  <p>Best Design Company 2019</p>
+              </div> {% endcomment %}
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="contact-us">
+                          <div class="contact-icon">
+                              <i class="fa fa-map-o" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info">
+                              <h3>Agra India</h3>
+                              <p>5353 Road Avenue</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+                  <div class="col-md-6">
+                      <div class="contact-us contact-us-last">
+                          <div class="contact-icon">
+                              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info">
+                              <h3>63 952 7 6378</h3>
+                              <p>Give us a call</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Contact Row -->
+              <div class="row">
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget footer-left-widget">
+                          <div class="section-heading">
+                              <h3>Useful Links</h3>
+                              <span class="animate-border border-black"></span>
+                          </div>
+                          <ul>
+                              <li>
+                                  <a href="#">About us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Services</a>
+                              </li>
+                              <li>
+                                  <a href="#">Projects</a>
+                              </li>
+                              <li>
+                                  <a href="#">Our Team</a>
+                              </li>
+                          </ul>
+                          <ul>
+                              <li>
+                                  <a href="#">Contact us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Blog</a>
+                              </li>
+                              <li>
+                                  <a href="#">Testimonials</a>
+                              </li>
+                              <li>
+                                  <a href="#">Faq</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- End Footer Widget -->
+                  </div>
+                  <!-- End col -->
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget">
+                          <div class="section-heading">
+                              <h3>Subscribe</h3>
+                              <span class="animate-border border-black"></span>
+                          </div>
+                          <p class="textC">
+                          Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                          <form action="#">
+                              <div class="form-row">
+                                  <div class="col dk-footer-form">
+                                      <input type="email" class="form-control" placeholder="Email Address">
+                                      <button type="submit">
+                                          <i class="fa fa-send"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </form>
+                          <!-- End form -->
+                      </div>
+                      <!-- End footer widget -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Row -->
+          </div>
+          <!-- End Col -->
+      </div>
+      <!-- End Widget Row -->
+  </div>
+  <!-- End Contact Container -->
+
+
+  <div class="copyright">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <span>Copyright © 2022, All Right Study Portal</span>
+              </div>
+              <!-- End Col -->
+              <div class="col-md-6">
+                  <div class="copyright-menu">
+                      <ul>
+                          <li>
+                              <a href="{% url 'home' %}">Home</a>
+                          </li>
+                          <li>
+                              <a href="#">Terms</a>
+                          </li>
+                          <li>
+                              <a href="#">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- End col -->
+          </div>
+          <!-- End Row -->
+      </div>
+      <!-- End Copyright Container -->
+  </div>
+  <!-- End Copyright -->
+  <!-- Back to top -->
+ {% comment %} <div id="back-to-top" class="back-to-top">
+      <button class="btn btn-dark" title="Back to Top" style="display: block;">
+          <i class="fa fa-angle-up"></i>
+      </button>
+  </div>  {% endcomment %}
+  <!-- End Back to top -->
+
+</footer>
+{% endblock content %}
